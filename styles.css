@@ -1,67 +1,97 @@
 body{
-   background-image: url(images/universe_sample.jpg);
+   padding: 0;
+   margin: 0;
+   background: url(images/universe_sample.jpg);
    background-repeat: no-repeat;
-   background-position: center;
-   background-attachment: fixed;
+   background-position: top;
    background-size: cover;
+   font-family: monospace;
+   color: white;
+   height: 100vh;
 }
+
 .loginBox {
+   height: 400px;
+   width: 450px;
+   background: linear-gradient(to bottom, rgb(111, 175, 235), rgb(4, 6, 112));
    position: absolute;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   background-color: rgb(83, 36, 211);
-   border-top-left-radius: 10%;
-   border-bottom-right-radius: 20%;
-   height: 300px;
-   width: 300px;
+   box-sizing: border-box;
+   padding: 50px 40px;
+   border-radius: 20px;
 }
 
-.loginBox img {
+.loginBox img{
+   background: rgb(111, 175, 235);
    position: absolute;
-   top: 20%;
-   left: 50%;
-   transform: translate(-50%, -110%);
-   background-color: rgb(83, 36, 211);
+   top: -55px;
+   left: -35px;
+   height: 120px;
+   width: 120px;
    border-radius: 50%;
    
-   width: 150px;
 }
 
-.loginBox h4 {
-   font-family:monospace;
-   font-size: 14px;
+.loginBox h1{
+   padding: 0 0 20px;
+   margin: 0;
+   font-weight: bolder;
    text-align: center;
-   position: relative;
-   margin-bottom: 10px;
-   margin-top: 11px;
-   top: 15%;
-   width: 100%;
+   font-size: 30px;
 }
 
-.loginBox input {
-   font-size-adjust: initial;
-   font-style: oblique;
-   font-size: 15px;
-   position: relative;
-   left: 50%;
-   transform: translate(-50%, 80%);
-   border-collapse: separate;
-   border-radius: 10%;
-   height: 28px;
-   width: 80%;
-   margin-bottom: 5px;
-   margin-top: 10px;
-}
-
-.loginBox #login {
-   font-family: monospace;
+.loginBox label{
+   padding: 0;
+   margin: 0;
    font-weight: bold;
-   font-style: normal;
-   position: absolute;
-   top: 72%;
-   width: 100px;
-   height: 30px;
-   background-color: rgb(38, 0, 255);
+   display: block;
+   font-size: 15px;
+}
+
+.loginBox input{
+   padding: 0;
+   margin-bottom: 20px;
+   margin-top: 5px;
+   width: 100%;
+
+}
+
+.loginBox input[type="text"],
+.loginBox input[type="password"]{
    border: none;
+   border-right: 1px solid whitesmoke;
+   border-bottom: 1px solid whitesmoke;
+   background: transparent;
+   outline: none;
+   height: 30px;
+   font-size: 16px;
+   color: darkblue;
+   
+}
+
+::-webkit-input-placeholder{
+   color: darkblue;
+}
+
+.loginBox input[type="submit"]{
+   border: none;
+   height: 35px;
+   outline: none;
+   background: rgb(171, 213, 252);
+   font-weight: bolder;
+   font-size: 18px;
+   color: rgb(1, 1, 61);
+}
+
+.loginBox a{
+   text-decoration: none;
+   line-height: 15px;
+   font-size: 14px;
+   color: rgb(180, 217, 255);
+}
+
+.loginBox a:hover{
+   color: whitesmoke;
 }
