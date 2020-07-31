@@ -1,0 +1,67 @@
+body{
+   background-image: url(images/universe_sample.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+}
+.loginBox {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: rgb(83, 36, 211);
+   border-top-left-radius: 10%;
+   border-bottom-right-radius: 20%;
+   height: 300px;
+   width: 300px;
+}
+
+.loginBox img {
+   position: absolute;
+   top: 20%;
+   left: 50%;
+   transform: translate(-50%, -110%);
+   background-color: rgb(83, 36, 211);
+   border-radius: 50%;
+   
+   width: 150px;
+}
+
+.loginBox h4 {
+   font-family:monospace;
+   font-size: 14px;
+   text-align: center;
+   position: relative;
+   margin-bottom: 10px;
+   margin-top: 11px;
+   top: 15%;
+   width: 100%;
+}
+
+.loginBox input {
+   font-size-adjust: initial;
+   font-style: oblique;
+   font-size: 15px;
+   position: relative;
+   left: 50%;
+   transform: translate(-50%, 80%);
+   border-collapse: separate;
+   border-radius: 10%;
+   height: 28px;
+   width: 80%;
+   margin-bottom: 5px;
+   margin-top: 10px;
+}
+
+.loginBox #login {
+   font-family: monospace;
+   font-weight: bold;
+   font-style: normal;
+   position: absolute;
+   top: 72%;
+   width: 100px;
+   height: 30px;
+   background-color: rgb(38, 0, 255);
+   border: none;
+}
